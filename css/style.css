@@ -1,0 +1,33 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --black: #333;
+    --white: #FFF;
+    --gold: #D5B986;
+    --grey: #999999;
+    --grey_light: #F6F6F6;
+    --grey_shade: #666;
+    --mb_grey: #EAEAEA;
+    --md_grey: #EAEAEA;
+    --primary: #A65CF0;
+    --primary_light: #C998FB;
+    --primary_shade: #7033AC;
+    --orange: #FF862F;
+    --pink_violet: #EBD1FF;
+}
+
+.container {
+    padding: 0 15px;
+    margin: 0 auto;
+    max-width: 1280px;
+    box-sizing: content-box;
+}
+
+a {
+    text-decoration: none;
+}

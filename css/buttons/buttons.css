@@ -1,0 +1,103 @@
+/* Primary button*/
+.primary-btn {
+    border-radius: 10px;
+    padding: 22px 47px;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--white, #FFF);
+    background: var(--primary, #A65CF0);
+}
+
+.primary-btn:hover {
+    background: var(--primary_light, #C998FB);
+}
+
+.primary-btn:focus {
+    border: 2px solid var(--primary_shade, #7033AC);
+    background: var(--primary_light, #C998FB);
+}
+
+.primary-btn:active {
+    background: var(--primary_shade, #7033AC);
+}
+
+.primary-btn:disabled {
+    color: var(--grey, #999);
+    background: var(--md_grey, #EAEAEA);
+}
+
+/* Secondary button*/
+.secondary-btn {
+    border: 2px solid var(--primary, #A65CF0);
+    border-radius: 10px;
+    padding: 19px 35px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--primary, #A65CF0);
+    background: transparent;
+}
+
+.secondary-btn:hover {
+    background: var(--primary, #A65CF0);
+}
+
+.secondary-btn:focus {
+    border: 2px solid var(--primary, #A65CF0);
+    background: var(--primary_light, #C998FB);
+}
+
+.secondary-btn:active {
+    background: var(--primary_shade, #7033AC);
+}
+
+/* Arrow button */
+.arrow-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.arrow-btn__title {
+    transition: all 0.5s ease;
+    color: var(--primary, #A65CF0);
+    border-bottom: 2px solid transparent;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.arrow-btn__span {
+    transition: all 0.5s ease;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background-image: url("../../img/icons/arrow.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.arrow-btn:hover .arrow-btn__title {
+    border-bottom-color: var(--primary, #A65CF0);
+    color: var(--primary, #A65CF0);
+}
+
+.arrow-btn:hover .arrow-btn__span {
+    background-image: url("../../img/icons/arrow-hover.svg");
+}
+
+.arrow-btn:focus .arrow-btn__title {
+    border-bottom-color: var(--primary, #A65CF0);
+    color: var(--primary, #A65CF0);
+}
+
+.arrow-btn:focus .arrow-btn__span {
+    background-image: url("../../img/icons/arrow-focus.svg");
+}
+
+.arrow-btn:active .arrow-btn__title {
+    border-bottom-color: var(--primary_shade, #7033AC);
+    color: var(--primary_shade, #7033AC);
+}
+
+.arrow-btn:active .arrow-btn__span {
+    background-image: url("../../img/icons/arrow-active.svg");
+}
