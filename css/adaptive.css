@@ -11,9 +11,14 @@
         display: block;
     }
 
-    /*.hero {*/
-    /*    background-image: url("../img/other/1024/advertising-banner-1.png");*/
-    /*}*/
+    .special-abilities__list {
+        grid-template-columns: repeat(auto-fit, minmax(296px, 1fr));
+        gap: 32px;
+    }
+
+    .card__bottom-right {
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
@@ -28,9 +33,9 @@
         display: block;
     }
 
-    /*.hero {*/
-    /*    background-image: url("../img/other/768/advertising-banner-1.png");*/
-    /*}*/
+    .special-abilities__item {
+        display: flex;
+    }
 }
 
 @media (max-width: 320px) {
@@ -73,5 +78,9 @@
     .hero__title {
         font-size: 20px;
         margin-bottom: unset;
+    }
+
+    .special-abilities__list {
+        gap: 24px;
     }
 }

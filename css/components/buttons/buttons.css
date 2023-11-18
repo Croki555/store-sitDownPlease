@@ -30,6 +30,7 @@
 
 /* Secondary button*/
 .secondary-btn {
+    cursor: pointer;
     border: 2px solid var(--primary, #A65CF0);
     border-radius: 10px;
     padding: 19px 35px;
@@ -40,6 +41,7 @@
 }
 
 .secondary-btn:hover {
+    color: var(--white, #FFF);
     background: var(--primary, #A65CF0);
 }
 

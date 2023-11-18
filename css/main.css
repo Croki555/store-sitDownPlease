@@ -6,3 +6,5 @@
 /* Секции */
 @import "./sections/header.css";
 @import "./sections/hero.css";
+@import "./sections/special-abilities.css";
+@import "./sections/high-rating.css";
