@@ -1,2 +1,8 @@
-@import "./buttons/buttons.css";
-@import "./text/links.css";
+/* Компоненты */
+@import "./components/buttons/buttons.css";
+@import "./components/links/icons.css";
+@import "./components/links/text.css";
+@import "./components/inputs/inputs.css";
+/* Секции */
+@import "./sections/header.css";
+@import "./sections/hero.css";

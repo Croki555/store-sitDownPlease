@@ -1,3 +1,29 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans-SemiBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+}
+@font-face {
+    font-family: "PlayfairDisplay";
+    src: url("../fonts/PlayfairDisplay-Black.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 900;
+}
 
 * {
     padding: 0;
@@ -9,6 +35,10 @@
     --black: #333;
     --white: #FFF;
     --gold: #D5B986;
+    --bone: #FFF5D1;
+    --secondary: #FF862F;
+    --secondary_light: #FFBD59;
+    --secondary_shade: #BB370E;
     --grey: #999999;
     --grey_light: #F6F6F6;
     --grey_shade: #666;
@@ -21,13 +51,37 @@
     --pink_violet: #EBD1FF;
 }
 
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+input, button {
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+button[type="submit"] {
+    cursor: pointer;
+}
+
+::-webkit-scrollbar { /* chrome based */
+     width: 0;  /* ширина scrollbar'a */
+     background: transparent;  /* опционально */
+ }
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--white, #FFF);
+}
+
 .container {
     padding: 0 15px;
     margin: 0 auto;
     max-width: 1280px;
     box-sizing: content-box;
-}
-
-a {
-    text-decoration: none;
 }

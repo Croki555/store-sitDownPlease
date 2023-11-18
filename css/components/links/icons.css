@@ -1,0 +1,65 @@
+/* Logo */
+.logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo__icon,
+.logo__title,
+.user,
+.basket__icon {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.logo__icon {
+    width: 37px;
+    height: 27px;
+    background-image: url("../../../img/icons/logo.svg");
+}
+
+.logo__title {
+    width: 140px;
+    height: 17px;
+    background-image: url("../../../img/icons/logo-title.svg");
+}
+
+/* User */
+.user {
+    width: 26px;
+    height: 26px;
+    background-image: url("../../../img/icons/user.svg");
+}
+
+/* Basket */
+.basket {
+    display: inline-flex;
+    align-items: center;
+}
+
+.basket__icon {
+    position: relative;
+    z-index: 2;
+    width: 30px;
+    height: 28px;
+    background-image: url("../../../img/icons/basket.svg");
+}
+
+.basket__count {
+    position: relative;
+    left: 3px;
+    z-index: 1;
+    border-radius: 50%;
+    background-color: var(--secondary, #FF862F);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 14px;
+    min-height: 15px;
+    color: var(--white, #FFF);
+    font-size: 10px;
+    font-weight: 700;
+}

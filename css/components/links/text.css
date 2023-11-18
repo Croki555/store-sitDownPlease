@@ -1,0 +1,91 @@
+/* Text Link */
+.text-link {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    color: var(--black, #333);
+}
+
+.text-link:hover {
+    color: var(--primary, #A65CF0);
+}
+
+.text-link:focus {
+    color: var(--black, #333);
+    background: var(--pink_violet, #EBD1FF);
+}
+
+.text-link:active {
+    color: var(--primary_shade, #7033AC);
+}
+
+/* Text Link Light */
+.text-link-light {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    color: var(--grey, #999);
+}
+
+.text-link-light:hover {
+    color: var(--primary, #A65CF0);
+}
+
+.text-link-light:focus {
+    color: var(--primary_shade, #7033AC);
+    background: var(--pink_violet, #EBD1FF);
+}
+
+.text-link-light:active {
+    color: var(--primary_shade, #7033AC);
+}
+
+/* Phone Link */
+.phone {
+    display: inline-flex;
+    align-items: center;
+}
+
+.phone__icon {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background-image: url("../../../img/icons/phone.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.phone__number {
+    color: var(--secondary, #FF862F);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.phone:hover .phone__icon {
+    background-image: url("../../../img/icons/phone-hover.svg");
+}
+
+.phone:hover .phone__number {
+    color: var(--secondary_light, #FFBD59);
+}
+
+.phone:focus {
+    background: var(--bone, #FFF5D1);
+}
+
+.phone:focus .phone__icon {
+    background-image: url("../../../img/icons/phone-focus.svg");
+}
+
+.phone:focus .phone__number {
+    color: var(--secondary, #FF862F);
+}
+
+.phone:active .phone__icon {
+    background-image: url("../../../img/icons/phone-active.svg");
+}
+
+.phone:active .phone__number {
+    color: var(--secondary_shade, #BB370E);
+}

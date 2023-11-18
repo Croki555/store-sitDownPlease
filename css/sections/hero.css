@@ -1,0 +1,21 @@
+.hero {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("../../img/other/1920/advertising-banner-1.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.hero .container {
+    width: 100%;
+}
+
+.hero__title {
+    margin-bottom: 49px;
+    max-width: 496px;
+    color: var(--grey, #999);
+    font-size: 48px;
+    font-weight: 700;
+}
