@@ -44,6 +44,10 @@
         padding: 0 12px;
     }
 
+    .header {
+        padding-bottom: 32px;
+    }
+
     .header__tablet {
         display: none;
     }
@@ -52,13 +56,15 @@
         display: block;
     }
 
-    .hero {
+    .hero,
+    .new-collect {
         padding-top: 32px;
         display: block;
         height: 302px;
     }
 
-    .hero__img {
+    .hero__img,
+    .new-collect__img {
         position: absolute;
         top: 0;
         left: 0;
@@ -66,7 +72,8 @@
         height: 210px;
     }
 
-    .hero .container {
+    .hero .container,
+    .new-collect .container {
         position: unset;
         transform: unset;
         height: 100%;
@@ -75,12 +82,22 @@
         justify-content: space-between;
     }
 
-    .hero__title {
+    .hero__title,
+    .new-collect__title {
         font-size: 20px;
         margin-bottom: unset;
+    }
+
+    .new-collect__title-gold {
+        font-size: 24px;
     }
 
     .special-abilities__list {
         gap: 24px;
     }
+
+    .high-rating {
+        padding-bottom: 32px;
+    }
+
 }

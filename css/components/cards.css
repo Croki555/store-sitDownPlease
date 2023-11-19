@@ -1,0 +1,126 @@
+.card {
+    padding: 30px;
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    background: var(--grey_light, #F6F6F6);
+}
+
+.card__img {
+    width: 100%;
+    height: 100%;
+}
+
+.card__title {
+    color: var(--black, #333);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.card__title-model {
+    display: block;
+}
+
+.card__top {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-grow: 1;
+}
+
+.card__bottom {
+    padding-top: 16px;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 24px;
+    /*max-width: 225px;*/
+}
+
+.card__bottom-left {
+    flex-shrink: 0;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 225px;
+}
+
+.card__bottom-right {
+    flex-grow: 1;
+    column-gap: 20px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.card__price {
+    color: var(--grey_shade, #666);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.card__prices {
+    display: inline-flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.card__prices-new {
+    display: inline-block;
+    color: var(--secondary, #FF862F);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.card__prices-old {
+    display: inline-block;
+    color: var(--grey, #999);
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration-line: line-through;
+}
+
+
+.discount {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    padding: 7px 0;
+    text-align: center;
+    width: 92px;
+    height: 34px;
+    background-image: url("../../img/icons/discount.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.discount__price {
+    color: var(--white, #FFF);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.rating {
+    display: inline-block;
+}
+
+.rating__num {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 6px;
+    color: var(--secondary, #FF862F);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.rating__num:before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    background-image: url("../../img/icons/star.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
