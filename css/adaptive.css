@@ -56,6 +56,22 @@
     .top-category__item:nth-child(5) .top-category__item-bottom {
         padding-top: 36px;
     }
+
+    .userful__list {
+        grid-template-columns: repeat(auto-fit, minmax(296px, 1fr));
+    }
+
+    .userful__item {
+        height: 556px;
+    }
+
+    .userful__item:nth-child(3) {
+        display: flex;
+    }
+
+    .userful__img {
+        height: 202px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -76,6 +92,14 @@
 
     .top-category__item:nth-child(3)  {
         order: 2;
+    }
+
+    .userful__item:nth-child(3) {
+        display: none;
+    }
+
+    .userful__list {
+        grid-template-columns: repeat(auto-fit, minmax(296px, 1fr));
     }
 }
 
@@ -186,5 +210,14 @@
 
     .top-category__item-bottom {
         display: none;
+    }
+
+    .userful__item {
+        display: flex;
+        height: 456px;
+    }
+
+    .userful__description {
+        font-size: 16px;
     }
 }
