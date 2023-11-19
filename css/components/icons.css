@@ -18,20 +18,20 @@
 .logo__icon {
     width: 37px;
     height: 27px;
-    background-image: url("../../../img/icons/logo.svg");
+    background-image: url("../../img/icons/logo.svg");
 }
 
 .logo__title {
     width: 140px;
     height: 17px;
-    background-image: url("../../../img/icons/logo-title.svg");
+    background-image: url("../../img/icons/logo-title.svg");
 }
 
 /* User */
 .user {
     width: 26px;
     height: 26px;
-    background-image: url("../../../img/icons/user.svg");
+    background-image: url("../../img/icons/user.svg");
 }
 
 /* Basket */
@@ -45,7 +45,7 @@
     z-index: 2;
     width: 30px;
     height: 28px;
-    background-image: url("../../../img/icons/basket.svg");
+    background-image: url("../../img/icons/basket.svg");
 }
 
 .basket__count {

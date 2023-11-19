@@ -50,7 +50,7 @@
     display: inline-block;
     width: 22px;
     height: 22px;
-    background-image: url("../../../img/icons/phone.svg");
+    background-image: url("../../img/icons/phone.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;
@@ -63,7 +63,7 @@
 }
 
 .phone:hover .phone__icon {
-    background-image: url("../../../img/icons/phone-hover.svg");
+    background-image: url("../../img/icons/phone-hover.svg");
 }
 
 .phone:hover .phone__number {
@@ -75,7 +75,7 @@
 }
 
 .phone:focus .phone__icon {
-    background-image: url("../../../img/icons/phone-focus.svg");
+    background-image: url("../../img/icons/phone-focus.svg");
 }
 
 .phone:focus .phone__number {
@@ -83,7 +83,7 @@
 }
 
 .phone:active .phone__icon {
-    background-image: url("../../../img/icons/phone-active.svg");
+    background-image: url("../../img/icons/phone-active.svg");
 }
 
 .phone:active .phone__number {

@@ -19,6 +19,43 @@
     .card__bottom-right {
         display: none;
     }
+
+    .top-category__item {
+        width: 296px;
+    }
+
+    .top-category__item:nth-child(2) {
+        flex-grow: 1;
+        width: 296px;
+        order: 2;
+    }
+
+    .top-category__item:nth-child(2) .top-category__item-center,
+    .top-category__item:nth-child(4) .top-category__item-center,
+    .top-category__item:nth-child(5) .top-category__item-center {
+        max-width: 252px;
+        height: 296px;
+    }
+
+    .top-category__item:nth-child(3) .top-category__item-center {
+        height: 296px;
+    }
+
+    .top-category__item:nth-child(5) {
+        order: 3;
+    }
+
+    .top-category__item:nth-child(3) .top-category__item-top,
+    .top-category__item:nth-child(4) .top-category__item-top,
+    .top-category__item:nth-child(5) .top-category__item-top {
+        padding-bottom: 36px;
+    }
+
+    .top-category__item:nth-child(3) .top-category__item-bottom,
+    .top-category__item:nth-child(4) .top-category__item-bottom,
+    .top-category__item:nth-child(5) .top-category__item-bottom {
+        padding-top: 36px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -35,6 +72,10 @@
 
     .special-abilities__item {
         display: flex;
+    }
+
+    .top-category__item:nth-child(3)  {
+        order: 2;
     }
 }
 
@@ -100,4 +141,50 @@
         padding-bottom: 32px;
     }
 
+    .top-category__item:not(:first-child) .top-category__item-title {
+        font-size: 16px;
+    }
+
+    .top-category__item-title + .arrow-btn {
+        display: inline-flex;
+    }
+
+    .top-category__item-top  div {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .top-category__list {
+        gap: 16px;
+    }
+
+    .top-category__item:not(:first-child) {
+        max-width: 100%;
+        width: 140px;
+    }
+
+    .top-category__item:not(:first-child) .top-category__item-center {
+        height: 104px;
+    }
+
+    .category-list {
+        gap: 5px;
+    }
+
+    .category-list:first-child {
+        gap: 10px;
+    }
+
+    .top-category__item-top {
+        padding: 20px 20px 13px 20px!important;
+    }
+
+    .top-category__item-center {
+        order: 2;
+    }
+
+    .top-category__item-bottom {
+        display: none;
+    }
 }
