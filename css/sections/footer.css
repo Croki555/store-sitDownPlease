@@ -1,0 +1,65 @@
+.footer {
+    padding-top: 70px;
+}
+.footer__top {
+    padding: 24px 0;
+    background: var(--md_grey, #EAEAEA);
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.social-list {
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.social-list__link {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.classmates {
+    background-image: url("../../img/icons/classmates.svg");
+}
+
+.vk {
+    background-image: url("../../img/icons/vk.svg");
+}
+
+.footer__nav {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.footer__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer__bottom {
+    padding: 5px 0;
+    text-align: center;
+}
+
+.footer__bottom span {
+    color: var(--grey, #999);
+    font-size: 14px;
+    font-weight: 400;
+}

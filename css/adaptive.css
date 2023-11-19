@@ -72,6 +72,10 @@
     .userful__img {
         height: 202px;
     }
+
+    .force__left {
+        max-width: 405px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -101,6 +105,43 @@
     .userful__list {
         grid-template-columns: repeat(auto-fit, minmax(296px, 1fr));
     }
+
+    .force__right {
+        flex-shrink: 0;
+        width: 187px;
+        height: 444px;
+        background-image: url("/img/other/768/curves.png");
+    }
+
+    .footer .container {
+        flex-direction: column;
+    }
+
+    .footer__left {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .social-list {
+        padding-right: 50px;
+    }
+
+    .footer__nav {
+        gap: 24px;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 480px) {
+    .force__left {
+        max-width: 100%;
+    }
+
+    .force__right {
+        display: none;
+    }
+
 }
 
 @media (max-width: 320px) {
@@ -220,4 +261,17 @@
     .userful__description {
         font-size: 16px;
     }
+
+    .force__checkbox-label {
+        font-size: 12px;
+    }
+
+    .footer__left {
+        justify-content: center;
+    }
+
+    .social-list {
+        padding-right: 0;
+    }
+
 }
