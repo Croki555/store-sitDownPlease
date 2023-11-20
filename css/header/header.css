@@ -14,21 +14,28 @@
 .nav-top__item {
     padding: 8px;
 }
+
 .nav-top__item:last-child {
     padding-right: 0;
 }
 
-
 .nav-bottom__list {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
-    gap: 91px;
+    column-gap: 91px;
+    row-gap: 30px;
+}
+
+.nav-bottom__item {
+    flex-shrink: 0;
 }
 
 .form-search__btn {
     cursor: pointer;
 }
+
 
 /* Desktop */
 .header__desktop {
@@ -55,14 +62,18 @@
     display: inline-flex;
     align-items: center;
 }
+
+
 /* Laptop */
 .laptop__first {
     padding: 17px 0;
 }
+
 .laptop__second {
     padding: 8px 0;
     background: var(--grey_light, #F6F6F6);
 }
+
 .laptop__second .container,
 .laptop__third .container {
     display: flex;
@@ -74,9 +85,11 @@
 .laptop__second .nav-top__item {
    padding: 10px;
 }
+
 .laptop__third {
     padding: 32px 0;
 }
+
 .laptop__third .nav-bottom__list {
     gap: 41px;
     flex-wrap: wrap;
@@ -85,6 +98,7 @@
 .laptop__forth .form-search {
     max-width: 733px;
 }
+
 
 /* Tablet */
 .tablet__first {
@@ -101,9 +115,11 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
 .tablet__third {
     padding-top: 32px;
 }
+
 .tablet__third .container{
     display: flex;
     align-items: center;
@@ -133,6 +149,8 @@
 .tablet__forth .form-search {
     max-width: 100%;
 }
+
+
 /* Mobile */
 .mobile__first {
     padding: 10px 0;
@@ -174,7 +192,6 @@
     gap: 20px;
 }
 
-
 .form-search {
     position: relative;
 }
@@ -185,8 +202,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    border-radius: 0px 10px 10px 10px;
-    border: 2px solid #F6F6F6;
+    border-radius: 0px 10px 10px;
     width: 300px;
     height: 254px;
     flex-shrink: 0;
@@ -198,13 +214,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 32px  ;
+    padding: 19px 32px  ;
     border-radius: 0px 10px 10px 0px;
     border: 2px solid #A65CF0;
     background: #FFF;
 }
 
 .dropdown__top-icon {
+    pointer-events: none;
     display: inline-block;
     width: 13px;
     height: 8px;
@@ -215,6 +232,7 @@
 }
 
 .dropdown__title {
+    pointer-events: none;
     color: #A65CF0;
     font-size: 16px;
     font-weight: 400;

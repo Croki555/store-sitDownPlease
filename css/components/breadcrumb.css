@@ -1,0 +1,24 @@
+.breadcrumb {
+    padding-top: 23px;
+}
+
+.breadcrumb-list{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.breadcrumb-list__item {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 5px;
+}
+
+.breadcrumb-list__item:not(:last-child):after {
+    content: '/';
+    color: var(--grey, #999);
+}
+
+.breadcrumb-list__item:last-child .breadcrumb-list__link {
+    color: var(--primary_shade, #7033AC);
+}

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/adaptive.css">
+    <link rel="stylesheet" href="./css/pages/main/main.css">
 </head>
 <body>
     <header class="header">
@@ -48,7 +48,7 @@
                     <nav class="nav-bottom">
                         <ul class="nav-bottom__list">
                             <li class="nav-bottom__item">
-                                <a class="nav-bottom__link text-link" href="#">Каталог</a>
+                                <a class="nav-bottom__link text-link" href="./catalog.html">Каталог</a>
                             </li>
                             <li class="nav-bottom__item">
                                 <a class="nav-bottom__link text-link" href="#">Магазины</a>
@@ -165,7 +165,7 @@
                     <nav class="nav-bottom">
                         <ul class="nav-bottom__list">
                             <li class="nav-bottom__item">
-                                <a class="nav-bottom__link text-link" href="#">Каталог</a>
+                                <a class="nav-bottom__link text-link" href="./catalog.html">Каталог</a>
                             </li>
                             <li class="nav-bottom__item">
                                 <a class="nav-bottom__link text-link" href="#">Магазины</a>
@@ -279,7 +279,7 @@
                     <nav class="nav-bottom">
                         <ul class="nav-bottom__list">
                             <li class="nav-bottom__item">
-                                <a class="nav-bottom__link text-link" href="#">Каталог</a>
+                                <a class="nav-bottom__link text-link" href="./catalog.html">Каталог</a>
                             </li>
                             <li class="nav-bottom__item">
                                 <a class="nav-bottom__link text-link" href="#">Магазины</a>
@@ -369,7 +369,7 @@
                     <nav class="nav-bottom">
                         <ul class="nav-bottom__list">
                             <li class="nav-bottom__item">
-                                <a class="nav-bottom__link text-link" href="#">Каталог</a>
+                                <a class="nav-bottom__link text-link" href="./catalog.html">Каталог</a>
                             </li>
                             <li class="nav-bottom__item">
                                 <a class="nav-bottom__link text-link" href="#">Магазины</a>
@@ -769,7 +769,7 @@
                         </picture>
                     </div>
                     <div class="top-category__item-bottom">
-                        <a class="arrow-btn" href="#">
+                        <a class="arrow-btn" href="./catalog.html">
                             <span class="arrow-btn__title">В каталог</span>
                             <span class="arrow-btn__span"></span>
                         </a>
@@ -802,7 +802,7 @@
                         </picture>
                     </div>
                     <div class="top-category__item-bottom">
-                        <a class="arrow-btn" href="#">
+                        <a class="arrow-btn" href="./catalog.html">
                             <span class="arrow-btn__title">В каталог</span>
                             <span class="arrow-btn__span"></span>
                         </a>
@@ -834,7 +834,7 @@
                         </picture>
                     </div>
                     <div class="top-category__item-bottom">
-                        <a class="arrow-btn" href="#">
+                        <a class="arrow-btn" href="./catalog.html">
                             <span class="arrow-btn__title">В каталог</span>
                             <span class="arrow-btn__span"></span>
                         </a>
@@ -866,7 +866,7 @@
                         </picture>
                     </div>
                     <div class="top-category__item-bottom">
-                        <a class="arrow-btn" href="#">
+                        <a class="arrow-btn" href="./catalog.html">
                             <span class="arrow-btn__title">В каталог</span>
                             <span class="arrow-btn__span"></span>
                         </a>
@@ -898,7 +898,7 @@
                         </picture>
                     </div>
                     <div class="top-category__item-bottom">
-                        <a class="arrow-btn" href="#">
+                        <a class="arrow-btn" href="./catalog.html">
                             <span class="arrow-btn__title">В каталог</span>
                             <span class="arrow-btn__span"></span>
                         </a>
@@ -1003,17 +1003,14 @@
                     Безусловно, новая модель организационной деятельности в значительной степени обусловливает важность
                     распределения внутренних резервов и ресурсов.
                 </p>
-                <form class="force__form" action="#" method="post">
+                <form class="force__form" action="#" method="post" novalidate>
                     <div class="force__row">
-                        <!--<label for="name"></label>-->
                         <input class="force__input" type="text" name="name" placeholder="Как вас зовут?">
                     </div>
                     <div class="force__row">
-                        <!--<label for="number"></label>-->
                         <input class="force__input" type="number" name="number" placeholder="Ваш телефон">
                     </div>
                     <div class="force__row">
-                        <!--<label for="email"></label>-->
                         <input class="force__input" type="email" name="email" placeholder="Ваш e-mail">
                     </div>
                     <button class="primary-btn">Отправить</button>
@@ -1100,24 +1097,9 @@
             </div>
         </div>
         <div class="footer__bottom">
-            <span>SDP®   2011-2021</span>
+            <span>SDP® 2011-2021</span>
         </div>
     </footer>
-    <script>
-        // const dropdawn = document.querySelectorAll('.dropdown');
-        const dropdawnBtn = document.querySelectorAll('.dropdown__top');
-        const searchBtn = document.querySelectorAll('.form-search__btn');
-
-        searchBtn.forEach(function(el, idx) {
-            el.addEventListener('click', function (ev) {
-                ev.target.nextElementSibling.style.display = 'block';
-            })
-        });
-        dropdawnBtn.forEach(function(el, idx) {
-            el.addEventListener('click', function (ev) {
-                this.parentElement.style.display = 'none';
-            })
-        });
-    </script>
+    <script src="./js/index.js"></script>
 </body>
 </html>

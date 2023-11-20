@@ -1,0 +1,30 @@
+@media (max-width: 768px) {
+    .footer .container {
+        flex-direction: column;
+    }
+
+    .footer__left {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .social-list {
+        padding-right: 50px;
+    }
+
+    .footer__nav {
+        gap: 24px;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 320px) {
+    .footer__left {
+        justify-content: center;
+    }
+
+    .social-list {
+        padding-right: 0;
+    }
+}

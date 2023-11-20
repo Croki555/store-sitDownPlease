@@ -87,7 +87,7 @@
 }
 
 .force__checkbox:checked + .force__checkbox-new {
-   background-image: url("../../img/icons/agree.svg");
+   background-image: url("../../../../img/icons/agree.svg");
 }
 
 .force__right {
@@ -95,7 +95,7 @@
     width: 100%;
     max-width: 624px;
     height: 383px;
-    background-image: url("../../img/other/1920/curves.png");
+    background-image: url("../../../../img/other/1920/curves.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;

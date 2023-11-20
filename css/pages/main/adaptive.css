@@ -1,0 +1,209 @@
+@media (max-width: 1024px) {
+    .special-abilities__list {
+        grid-template-columns: repeat(auto-fit, minmax(296px, 1fr));
+        gap: 32px;
+    }
+
+    .card__bottom-right {
+        display: none;
+    }
+
+    .top-category__item {
+        width: 296px;
+    }
+
+    .top-category__item:nth-child(2) {
+        flex-grow: 1;
+        width: 296px;
+        order: 2;
+    }
+
+    .top-category__item:nth-child(2) .top-category__item-center,
+    .top-category__item:nth-child(4) .top-category__item-center,
+    .top-category__item:nth-child(5) .top-category__item-center {
+        max-width: 252px;
+        height: 296px;
+    }
+
+    .top-category__item:nth-child(3) .top-category__item-center {
+        height: 296px;
+    }
+
+    .top-category__item:nth-child(5) {
+        order: 3;
+    }
+
+    .top-category__item:nth-child(3) .top-category__item-top,
+    .top-category__item:nth-child(4) .top-category__item-top,
+    .top-category__item:nth-child(5) .top-category__item-top {
+        padding-bottom: 36px;
+    }
+
+    .top-category__item:nth-child(3) .top-category__item-bottom,
+    .top-category__item:nth-child(4) .top-category__item-bottom,
+    .top-category__item:nth-child(5) .top-category__item-bottom {
+        padding-top: 36px;
+    }
+
+    .userful__list {
+        grid-template-columns: repeat(auto-fit, minmax(296px, 1fr));
+    }
+
+    .userful__item {
+        height: 556px;
+    }
+
+    .userful__item:nth-child(3) {
+        display: flex;
+    }
+
+    .userful__img {
+        height: 202px;
+    }
+
+    .force__left {
+        max-width: 405px;
+    }
+}
+
+@media (max-width: 768px) {
+    .special-abilities__item {
+        display: flex;
+    }
+
+    .top-category__item:nth-child(3)  {
+        order: 2;
+    }
+
+    .userful__item:nth-child(3) {
+        display: none;
+    }
+
+    .userful__list {
+        grid-template-columns: repeat(auto-fit, minmax(296px, 1fr));
+    }
+
+    .force__right {
+        flex-shrink: 0;
+        width: 187px;
+        height: 444px;
+        background-image: url("../../../img/other/768/curves.png");
+    }
+}
+
+@media (max-width: 480px) {
+    .force__left {
+        max-width: 100%;
+    }
+
+    .force__right {
+        display: none;
+    }
+
+}
+
+@media (max-width: 320px) {
+    .hero,
+    .new-collect {
+        padding-top: 32px;
+        display: block;
+        height: 302px;
+    }
+
+    .hero__img,
+    .new-collect__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        height: 210px;
+    }
+
+    .hero .container,
+    .new-collect .container {
+        position: unset;
+        transform: unset;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .hero__title,
+    .new-collect__title {
+        font-size: 20px;
+        margin-bottom: unset;
+    }
+
+    .new-collect__title-gold {
+        font-size: 24px;
+    }
+
+    .special-abilities__list {
+        gap: 24px;
+    }
+
+    .high-rating {
+        padding-bottom: 32px;
+    }
+
+    .top-category__item:not(:first-child) .top-category__item-title {
+        font-size: 16px;
+    }
+
+    .top-category__item-title + .arrow-btn {
+        display: inline-flex;
+    }
+
+    .top-category__item-top  div {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .top-category__list {
+        gap: 16px;
+    }
+
+    .top-category__item:not(:first-child) {
+        max-width: 100%;
+        width: 140px;
+    }
+
+    .top-category__item:not(:first-child) .top-category__item-center {
+        height: 104px;
+    }
+
+    .category-list {
+        gap: 5px;
+    }
+
+    .category-list:first-child {
+        gap: 10px;
+    }
+
+    .top-category__item-top {
+        padding: 20px 20px 13px 20px!important;
+    }
+
+    .top-category__item-center {
+        order: 2;
+    }
+
+    .top-category__item-bottom {
+        display: none;
+    }
+
+    .userful__item {
+        display: flex;
+        height: 456px;
+    }
+
+    .userful__description {
+        font-size: 16px;
+    }
+
+    .force__checkbox-label {
+        font-size: 12px;
+    }
+}
