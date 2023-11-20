@@ -1,0 +1,27 @@
+@media (max-width: 1024px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner {
+        display: none;
+    }
+
+    .filters__title {
+        display: none;
+    }
+
+    .filters {
+        display: flex;
+        gap: 32px;
+    }
+
+    .catalog__title {
+        display: none;
+    }
+
+    .aside .catalog__title {
+        display: block;
+    }
+}

@@ -13,3 +13,11 @@ header.addEventListener('click', (ev) => {
         dropdown.style.display = 'none';
     }
 });
+
+// Предотварить отправку всех форм
+const forms = document.querySelectorAll('form');
+forms.forEach(function (el, idx) {
+    el.addEventListener('submit', (ev) => {
+        ev.preventDefault()
+    })
+})

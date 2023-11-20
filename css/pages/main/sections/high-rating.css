@@ -6,12 +6,3 @@
     margin-bottom: 26px;
 }
 
-.high-rating__list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(296px, 1fr));
-    gap: 32px;
-}
-
-.high-rating__item {
-    height: 420px;
-}

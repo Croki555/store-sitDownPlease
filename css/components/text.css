@@ -89,3 +89,15 @@
 .phone:active .phone__number {
     color: var(--secondary_shade, #BB370E);
 }
+
+.title-1 {
+    color: var(--black, #333);
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.title-2 {
+    color: var(--black, #333);
+    font-size: 24px;
+    font-weight: 400;
+}

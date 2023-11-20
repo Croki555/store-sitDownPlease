@@ -1,0 +1,136 @@
+.breadcrumb {
+    padding-top: 23px;
+}
+
+.section-catalog {
+    padding-top: 32px;
+}
+
+.catalog__title {
+    margin-bottom: 24px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: minmax(auto, 296px) 1fr;
+    column-gap: 32px;
+}
+
+.aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.aside .catalog__title {
+    display: none;
+}
+
+.filters__title {
+    margin-bottom: 20px;
+    color: var(--black, #333);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.filters__row {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.filters__row:not(:last-child) {
+    margin-bottom: 26px;
+}
+
+.filters__row:last-child .filters__label:not(:last-child) {
+    margin-right: 8px;
+}
+
+.filters__row-title {
+    color: var(--grey_shade, #666);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.filters__label {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--grey_shade, #666);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.filters__input {
+    border-radius: 3px;
+    border: 1px solid var(--grey, #999999);
+    padding: 5px 10px;
+    max-width: 86px;
+}
+
+.filters__checkbox {
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+    border: 1px solid transparent;
+    width: 20px;
+    height: 20px;
+}
+
+.filters__checkbox-new {
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    border: 1px solid var(--grey, #999999);
+    background-color: transparent;
+    border-radius: 3px;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: 14px 14px;
+    background-position: center center;
+}
+
+.filters__checkbox:checked + .filters__checkbox-new {
+    background-image: url("../../../img/icons/agree.svg");
+    border-color: var(--primary);
+    background-color: var(--primary);
+}
+
+.banner {
+    width: 296px;
+    border-radius: 10px;
+}
+
+.banner__img {
+    border-radius: 10px 10px 0px 0px;
+    height: 190px;
+    background-image: url("../../../img/other/320/advertising-banner-2.png");
+}
+
+.banner__text {
+    padding: 30px;
+    border-radius:  0px 0px 10px 10px;
+    background: var(--black, #333);
+}
+
+.banner__title {
+    margin-bottom: 12px;
+    display: block;
+    color: var(--grey, #999);
+    max-width: 199px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.banner__title span {
+    display: block;
+    color: var(--gold, #D5B986);
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 900;
+}

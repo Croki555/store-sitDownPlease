@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/main.css">
-<!--    <link rel="stylesheet" href="./css/pages/main/main.css">-->
+    <link rel="stylesheet" href="./css/pages/catalog/catalog.css">
+  <link rel="stylesheet" href="./css/pages/catalog/adaptive.css">
 </head>
 <body>
   <header class="header">
@@ -76,7 +77,7 @@
             <button class="form-search__btn"></button>
             <div class="dropdown">
               <div class="dropdown__top">
-                <h3 class="dropdown__title">Выбрать категорию</h3>
+                <span class="dropdown__title">Выбрать категорию</span>
                 <span class="dropdown__top-icon"></span>
               </div>
               <ul class="dropdown__list">
@@ -193,7 +194,7 @@
             <button class="form-search__btn"></button>
             <div class="dropdown">
               <div class="dropdown__top">
-                <h3 class="dropdown__title">Выбрать категорию</h3>
+                <span class="dropdown__title">Выбрать категорию</span>
                 <span class="dropdown__top-icon"></span>
               </div>
               <ul class="dropdown__list">
@@ -303,7 +304,7 @@
             <button class="form-search__btn"></button>
             <div class="dropdown">
               <div class="dropdown__top">
-                <h3 class="dropdown__title">Выбрать категорию</h3>
+                <span class="dropdown__title">Выбрать категорию</span>
                 <span class="dropdown__top-icon"></span>
               </div>
               <ul class="dropdown__list">
@@ -393,7 +394,7 @@
             <button class="form-search__btn"></button>
             <div class="dropdown">
               <div class="dropdown__top">
-                <h3 class="dropdown__title">Выбрать категорию</h3>
+                <span class="dropdown__title">Выбрать категорию</span>
                 <span class="dropdown__top-icon"></span>
               </div>
               <ul class="dropdown__list">
@@ -431,27 +432,255 @@
       </div>
     </div>
   </header>
-  <section class="breadcrumb">
-    <div class="container">
-      <ul class="breadcrumb-list">
-        <li class="breadcrumb-list__item">
-          <a class="breadcrumb-list__link text-link-light" href="./index.html">Главная</a>
-        </li>
-        <li class="breadcrumb-list__item">
-          <a class="breadcrumb-list__link text-link-light" href="./index.html">Каталог</a>
-        </li>
-        <li class="breadcrumb-list__item">
-          <a class="breadcrumb-list__link text-link-light" href="./index.html">Диваны</a>
-        </li>
-        <li class="breadcrumb-list__item">
-          <a class="breadcrumb-list__link text-link-light" href="./index.html">Прямые диваны</a>
-        </li>
-      </ul>
-    </div>
-  </section>
-  <div class="wrapper">
-
-  </div>
+  <main>
+    <section class="breadcrumb">
+      <div class="container">
+        <ul class="breadcrumb-list">
+          <li class="breadcrumb-list__item">
+            <a class="breadcrumb-list__link text-link-light" href="./index.html">Главная</a>
+          </li>
+          <li class="breadcrumb-list__item">
+            <a class="breadcrumb-list__link text-link-light" href="./index.html">Каталог</a>
+          </li>
+          <li class="breadcrumb-list__item">
+            <a class="breadcrumb-list__link text-link-light" href="./index.html">Диваны</a>
+          </li>
+          <li class="breadcrumb-list__item">
+            <a class="breadcrumb-list__link text-link-light" href="./index.html">Прямые диваны</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="section-catalog">
+      <div class="container">
+        <div class="wrapper">
+          <aside class="aside">
+            <h2 class="catalog__title title-2">Каталог</h2>
+            <form class="filters" action="#">
+              <h3 class="filters__title">Фильтровать по:</h3>
+              <div class="filters__row">
+                <h4 class="filters__row-title">Цвет</h4>
+                <label class="filters__label" for="color-brown">
+                  <input class="filters__checkbox" type="checkbox" name="color[]" value="Коричневый" id="color-brown">
+                  Коричневый
+                  <span class="filters__checkbox-new"></span>
+                </label>
+                <label class="filters__label" for="color-black">
+                  <input class="filters__checkbox" checked type="checkbox" name="color[]" value="Черный" id="color-black">
+                  Черный
+                  <span class="filters__checkbox-new"></span>
+                </label>
+                <label class="filters__label" for="color-blue">
+                  <input class="filters__checkbox" type="checkbox" name="color[]" value="Синий" id="color-blue">
+                  Синий
+                  <span class="filters__checkbox-new"></span>
+                </label>
+                <label class="filters__label" for="color-white">
+                  <input class="filters__checkbox" type="checkbox" name="color[]" value="Белый" id="color-white">
+                  Белый
+                  <span class="filters__checkbox-new"></span>
+                </label>
+              </div>
+              <div class="filters__row">
+                <h4 class="filters__row-title">Категория</h4>
+                <label class="filters__label" for="category-sofa">
+                  <input class="filters__checkbox" checked type="checkbox" name="color[]" value="Диваны" id="category-sofa">
+                  Диваны
+                  <span class="filters__checkbox-new"></span>
+                </label>
+                <label class="filters__label" for="category-armchair">
+                  <input class="filters__checkbox" type="checkbox" name="color[]" value="Кресла" id="category-armchair">
+                  Кресла
+                  <span class="filters__checkbox-new"></span>
+                </label>
+              </div>
+              <div class="filters__row">
+                <h4 class="filters__row-title">Цена</h4>
+                <div>
+                  <label class="filters__label" for="from">
+                    от
+                    <input class="filters__input" type="text" value="2000" id="from">
+                  </label>
+                  <label class="filters__label" for="before">
+                    до
+                    <input class="filters__input" type="text" value="150 000" id="before">
+                  </label>
+                </div>
+              </div>
+            </form>
+            <div class="banner">
+              <div class="banner__img"></div>
+              <div class="banner__text">
+                <span class="banner__title"><span>Оксфорд 1950</span> Новая коллекция изысканных кресел</span>
+                <a class="arrow-btn" href="./catalog.html">
+                  <span class="arrow-btn__title">В каталог</span>
+                  <span class="arrow-btn__span"></span>
+                </a>
+              </div>
+            </div>
+          </aside>
+          <div class="catalog">
+            <h2 class="catalog__title title-2">Каталог</h2>
+            <ul class="card-list">
+              <li class="card">
+                <div class="rating">
+                  <span class="rating__num">5,0</span>
+                </div>
+                <div class="card__top">
+                  <picture>
+                    <source media="(max-width: 1024px)" srcset="./img/sofa/1024/r-94.png">
+                    <source media="(max-width: 768px)" srcset="./img/sofa/768/r-94.png">
+                    <source media="(max-width: 320px)" srcset="./img/sofa/320/r-94.png">
+                    <img class="card__img" src="./img/sofa/1920/r-94.png" alt="Диван кожаный “R-94”">
+                  </picture>
+                </div>
+                <div class="card__bottom">
+                  <h3 class="card__title">Диван кожаный <span class="card__title-model">“R-94”</span></h3>
+                  <span class="card__price">94 990 руб</span>
+                  <button class="secondary-btn">Купить</button>
+                </div>
+              </li>
+              <li class="card">
+                <div class="rating">
+                  <span class="rating__num">4,9</span>
+                </div>
+                <div class="card__top">
+                  <picture>
+                    <source media="(max-width: 1024px)" srcset="./img/sofa/1024/t-75.png">
+                    <source media="(max-width: 768px)" srcset="./img/sofa/768/t-75.png">
+                    <source media="(max-width: 320px)" srcset="./img/sofa/320/t-75.png">
+                    <img class="card__img" src="./img/sofa/1920/t-75.png" alt="Диван апартековый “T-75”">
+                  </picture>
+                </div>
+                <div class="card__bottom">
+                  <h3 class="card__title">Диван апартековый<span class="card__title-model">“T-75”</span></h3>
+                  <span class="card__price">69 990 руб</span>
+                  <button class="secondary-btn">Купить</button>
+                </div>
+              </li>
+              <li class="card">
+                <div class="rating">
+                  <span class="rating__num">4,8</span>
+                </div>
+                <div class="card__top">
+                  <picture>
+                    <source media="(max-width: 1024px)" srcset="./img/sofa/1024/d-31.png">
+                    <source media="(max-width: 768px)" srcset="./img/sofa/768/d-31.png">
+                    <source media="(max-width: 320px)" srcset="./img/sofa/320/d-31.png">
+                    <img class="card__img" src="./img/sofa/1920/d-31.png" alt="Диван тканевый “D-31”">
+                  </picture>
+                </div>
+                <div class="card__bottom">
+                  <h3 class="card__title">Диван тканевый <span class="card__title-model">“D-31”</span></h3>
+                  <span class="card__price">28 490 руб</span>
+                  <button class="secondary-btn">Купить</button>
+                </div>
+              </li>
+              <li class="card">
+                <div class="rating">
+                  <span class="rating__num">4,8</span>
+                </div>
+                <div class="card__top">
+                  <picture>
+                    <source media="(max-width: 1024px)" srcset="./img/sofa/1024/y-68.png">
+                    <source media="(max-width: 768px)" srcset="./img/sofa/768/y-68.png">
+                    <source media="(max-width: 320px)" srcset="./img/sofa/320/y-68.png">
+                    <img class="card__img" src="./img/sofa/1920/y-68.png" alt="Диван велюровый “Y-68”">
+                  </picture>
+                </div>
+                <div class="card__bottom">
+                  <h3 class="card__title">Диван велюровый <span class="card__title-model">“Y-68”</span></h3>
+                  <span class="card__price">22 990 руб</span>
+                  <button class="secondary-btn">Купить</button>
+                </div>
+              </li>
+              <li class="card">
+                <div class="rating">
+                  <span class="rating__num">4,8</span>
+                </div>
+                <div class="card__top">
+                  <picture>
+                    <source media="(max-width: 1024px)" srcset="./img/sofa/1024/w-95.png">
+                    <source media="(max-width: 768px)" srcset="./img/sofa/768/w-95.png">
+                    <source media="(max-width: 320px)" srcset="./img/sofa/320/w-95.png">
+                    <img class="card__img" src="./img/sofa/1920/w-95.png" alt="Диван из шинила “W-95”">
+                  </picture>
+                </div>
+                <div class="card__bottom">
+                  <h3 class="card__title">Диван из шинила <span class="card__title-model">“W-95”</span></h3>
+                  <span class="card__price">22 990 руб</span>
+                  <button class="secondary-btn">Купить</button>
+                </div>
+              </li>
+              <li class="card">
+                <div class="rating">
+                  <span class="rating__num">4,8</span>
+                </div>
+                <div class="card__top">
+                  <picture>
+                    <source media="(max-width: 1024px)" srcset="./img/sofa/1024/g-41.png">
+                    <source media="(max-width: 768px)" srcset="./img/sofa/768/g-41.png">
+                    <source media="(max-width: 320px)" srcset="./img/sofa/320/g-41.png">
+                    <img class="card__img" src="./img/sofa/1920/g-41.png" alt="Диван флоковый “G-41”">
+                  </picture>
+                </div>
+                <div class="card__bottom">
+                  <h3 class="card__title">Диван флоковый <span class="card__title-model">“G-41”</span></h3>
+                  <span class="card__price">17 990 руб</span>
+                  <button class="secondary-btn">Купить</button>
+                </div>
+              </li>
+              <li class="card">
+                <div class="rating">
+                  <span class="rating__num">4,8</span>
+                </div>
+                <div class="card__top">
+                  <picture>
+                    <img class="card__img" src="./img/sofa/1920/v-43.png" alt="Диван шиниловый “V-43”">
+                  </picture>
+                </div>
+                <div class="card__bottom">
+                  <h3 class="card__title">Диван шиниловый <span class="card__title-model">“V-43”</span></h3>
+                  <span class="card__price">19 990 руб</span>
+                  <button class="secondary-btn">Купить</button>
+                </div>
+              </li>
+              <li class="card">
+                <div class="rating">
+                  <span class="rating__num">4,7</span>
+                </div>
+                <div class="card__top">
+                  <picture>
+                    <img class="card__img" src="./img/sofa/1920/s-99.png" alt="Диван велюровый “S-99”">
+                  </picture>
+                </div>
+                <div class="card__bottom">
+                  <h3 class="card__title">Диван велюровый <span class="card__title-model">“S-99”</span></h3>
+                  <span class="card__price">19 990 руб</span>
+                  <button class="secondary-btn">Купить</button>
+                </div>
+              </li>
+              <li class="card">
+                <div class="rating">
+                  <span class="rating__num">4,7</span>
+                </div>
+                <div class="card__top">
+                  <picture>
+                    <img class="card__img" src="./img/sofa/1920/f-85.png" alt="Диван велюровый “S-99”">
+                  </picture>
+                </div>
+                <div class="card__bottom">
+                  <h3 class="card__title">Диван из кожзама<span class="card__title-model">“F-85”</span></h3>
+                  <span class="card__price">26 990 руб</span>
+                  <button class="secondary-btn">Купить</button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
   <footer class="footer">
     <div class="footer__top">
       <div class="container">

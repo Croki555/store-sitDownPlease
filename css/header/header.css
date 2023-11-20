@@ -233,6 +233,7 @@
 
 .dropdown__title {
     pointer-events: none;
+    display: block;
     color: #A65CF0;
     font-size: 16px;
     font-weight: 400;
