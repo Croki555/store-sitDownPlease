@@ -16,6 +16,10 @@
     .header__tablet {
         display: block;
     }
+
+    .nav-bottom {
+        display: none;
+    }
 }
 
 @media (max-width: 320px) {
@@ -32,6 +36,10 @@
     }
 
     .header__mobile {
+        display: block;
+    }
+
+    .nav-bottom {
         display: block;
     }
 }

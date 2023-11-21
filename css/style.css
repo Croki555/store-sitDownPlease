@@ -93,6 +93,10 @@ img {
     box-sizing: content-box;
 }
 
+.d-none {
+    display: none;
+}
+
 @media (max-width: 1024px) {
     .container {
         max-width: 952px;
@@ -111,3 +115,9 @@ img {
         padding: 0 12px;
     }
 }
+
+.tablet__third  {
+    position: relative;
+}
+
+
