@@ -2,19 +2,25 @@
     .wrapper {
         display: flex;
         flex-direction: column;
+        row-gap: 24px;
     }
 
     .banner {
         display: none;
     }
 
+    .filters {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+
     .filters__title {
         display: none;
     }
 
-    .filters {
-        display: flex;
-        gap: 32px;
+    .filters__row:not(:last-child) {
+        margin: 0;
     }
 
     .catalog__title {
@@ -23,5 +29,41 @@
 
     .aside .catalog__title {
         display: block;
+    }
+
+    .pagination__item:last-child {
+        display: unset;
+    }
+}
+
+@media (max-width: 320px) {
+    .card-list {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 16px;
+    }
+
+    .card {
+        padding: 16px;
+        height: 278px;
+    }
+
+    .card__title {
+        font-size: 16px;
+    }
+
+    .card__bottom {
+        gap: 16px;
+    }
+
+    .secondary-btn {
+        padding: 10px 22px;
+    }
+
+    .breadcrumb {
+        display: none;
+    }
+
+    .header {
+        padding-bottom: unset;
     }
 }

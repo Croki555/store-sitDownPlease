@@ -200,16 +200,18 @@
 }
 
 .dropdown {
-    display: none;
-    z-index: 100;
+    /*display: none;*/
+    z-index: -1;
     position: absolute;
     top: 0;
     right: 0;
-    border-radius: 0px 10px 10px;
     width: 300px;
-    height: 254px;
     flex-shrink: 0;
-    background: #FFF;
+    transition: 0.5s ease;
+}
+
+.dropdown.active {
+    z-index: 100;
 }
 
 .dropdown__top {
@@ -243,11 +245,15 @@
 }
 
 .dropdown__list {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: inherit;
     padding: 22px 30px;
     display: grid;
     grid-template-rows: repeat(5, auto);
     grid-auto-flow: column;
     row-gap: 10px;
+    background: var(--white);
 }
 
 /* Burger */
@@ -262,6 +268,7 @@
 }
 
 .burger span {
+    transition: 0.5s ease;
     pointer-events: none;
     display: block;
     width: inherit;
@@ -269,21 +276,21 @@
     background: var(--black);
 }
 
-.burger_open span{
+.burger.active span{
     background: var(--primary);
     border-radius: 3px;
 }
 
-.burger_open span:first-child {
+.burger.active span:first-child {
     transform-origin: left;
     transform: rotate(45deg) translate(4px, -1px);
 }
 
-.burger_open span:nth-child(2) {
+.burger.active span:nth-child(2) {
     display: none;
 }
 
-.burger_open span:last-child {
+.burger.active span:last-child {
     transform-origin: left;
     transform: rotate(-45deg) translate(4px, 1px);
 }

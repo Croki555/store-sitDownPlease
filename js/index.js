@@ -1,63 +1,95 @@
 // Dropdawn в поиске
 const headerTablet = document.querySelector('.header__tablet');
 const headerMobile = document.querySelector('.header__mobile');
-headerTablet.addEventListener('click', (ev) => {
+const header = document.querySelector('.header');
+header.addEventListener('click', (ev) => {
     const targetClass = ev.target.className;
     const targetElement = ev.target;
+    const container = targetElement.parentElement.parentElement;
 
-    if (targetClass === 'form-search__btn') {
-        targetElement.nextElementSibling.style.display = 'block';
-    } else if (targetClass === 'dropdown__top') {
-        targetElement.parentElement.style.display = 'none';
-    } else if (targetClass === 'form-search__input') {
-        const dropdown = targetElement.parentElement.children[2];
-        dropdown.style.display = 'none';
-    } else if (targetClass === 'burger' || targetClass === 'burger burger_open') {
-        let logo = targetElement.nextElementSibling.nextElementSibling;
-        let user_basket = targetElement.nextElementSibling.nextElementSibling.nextElementSibling;
+    switch (targetClass) {
+        case 'form-search__btn':
+            container.querySelector('.dropdown').classList.remove('d-none');
+            container.querySelector('.dropdown').classList.add('active');
+            break;
+        case 'dropdown__top':
+            container.querySelector('.dropdown').classList.add('d-none');
+            container.querySelector('.dropdown').classList.remove('active');
+            break;
+        case 'form-search__input':
+            container.querySelector('.dropdown').classList.add('d-none');
+            container.querySelector('.dropdown').classList.remove('active');
+            break;
+    }
+})
+
+headerTablet.addEventListener('click', function (ev) {
+    const targetClass = ev.target.className;
+    const targetElement = ev.target;
+    if (targetClass === 'burger' || targetClass === 'burger active') {
+        console.log()
+
+        let logo = this.querySelector('.logo');
+        let user_basket = this.querySelector('.user-basket');
         let container = targetElement.parentElement;
-        if(targetElement.classList.contains('burger_open')) {
+
+        if (targetElement.classList.contains('active')) {
+
             container.classList.remove('container_burger-open')
-            container.parentElement.nextElementSibling.style.display = 'block'
-            targetElement.classList.remove('burger_open')
+
+            this.querySelector('.tablet__forth').style.display = 'block'
+
+            targetElement.classList.remove('active')
+
             logo.style.display = 'inline-flex'
+
             user_basket.style.display = 'inline-flex'
         } else {
+            console.log('daad')
             container.classList.add('container_burger-open')
-            container.parentElement.nextElementSibling.style.display = 'none'
-            targetElement.classList.add('burger_open')
+
+            this.querySelector('.tablet__forth').style.display = 'none'
+
+            targetElement.classList.add('active')
+
             logo.style.display = 'none'
+
             user_basket.style.display = 'none'
         }
-        targetElement.nextElementSibling.classList.toggle('burger-dropdawn_close');
+        this.querySelector('.burger-dropdawn').classList.toggle('burger-dropdawn_close')
     }
 });
-headerMobile.addEventListener('click', (ev) => {
+
+headerMobile.addEventListener('click', function (ev) {
     const targetClass = ev.target.className;
     const targetElement = ev.target;
 
-    if (targetClass === 'burger' || targetClass === 'burger burger_open') {
-        let logo = targetElement.nextElementSibling.nextElementSibling;
-        let user_basket = targetElement.nextElementSibling.nextElementSibling.nextElementSibling;
+    if (targetClass === 'burger' || targetClass === 'burger active') {
         let container = targetElement.parentElement;
 
-        if(targetElement.classList.contains('burger_open')) {
+        if (targetElement.classList.contains('active')) {
+
             container.classList.remove('container_burger-open')
-            container.parentElement.nextElementSibling.style.display = 'block'
             container.querySelector('.logo').style.display = 'inline-flex'
 
-            targetElement.classList.remove('burger_open')
+            this.querySelector('.mobile__second').style.display = 'block'
+
+            targetElement.classList.remove('active')
+
             ev.currentTarget.querySelector('.mobile__third').style.display = 'block'
 
         } else {
             container.classList.add('container_burger-open')
-            container.parentElement.nextElementSibling.style.display = 'none'
+
             container.querySelector('.logo').style.display = 'none'
 
-            targetElement.classList.add('burger_open')
+            this.querySelector('.mobile__second').style.display = 'none'
+
+            targetElement.classList.add('active')
+
             ev.currentTarget.querySelector('.mobile__third').style.display = 'none'
         }
-        targetElement.nextElementSibling.classList.toggle('burger-dropdawn_close');
+        this.querySelector('.burger-dropdawn').classList.toggle('burger-dropdawn_close')
     }
 });
 

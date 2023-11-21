@@ -11,6 +11,7 @@
 }
 
 .wrapper {
+    margin-bottom: 32px;
     display: grid;
     grid-template-columns: minmax(auto, 296px) 1fr;
     column-gap: 32px;
@@ -133,4 +134,40 @@
     font-family: 'Playfair Display', serif;
     font-size: 24px;
     font-weight: 900;
+}
+
+.section-catalog__pagination {
+    text-align: center;
+}
+
+/* Pagination */
+
+.pagination {
+    display: inline-flex;
+    gap: 16px;
+}
+
+.pagination__link {
+    border-radius: 10px;
+    border: 2px solid var(--primary, #A65CF0);
+    display: flex;
+    width: 32px;
+    height: 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    color: var(--primary, #A65CF0);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.pagination__item.active .pagination__link {
+    background: var(--primary_shade, #7033AC);
+    border-color: transparent;
+    color: var(--white, #FFF);
+}
+
+.pagination__item:last-child {
+    display: none;
 }
