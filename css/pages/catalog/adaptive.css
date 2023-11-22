@@ -23,11 +23,11 @@
         margin: 0;
     }
 
-    .catalog__title {
+    .section-catalog__title {
         display: none;
     }
 
-    .aside .catalog__title {
+    .aside .section-catalog__title {
         display: block;
     }
 
