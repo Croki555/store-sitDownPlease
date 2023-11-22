@@ -6,3 +6,6 @@
     margin-bottom: 26px;
 }
 
+.secondary-btn {
+    align-self: self-start;
+}

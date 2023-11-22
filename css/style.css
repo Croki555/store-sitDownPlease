@@ -97,6 +97,11 @@ img {
     display: none;
 }
 
+.d-block {
+    display: block;
+}
+
+
 @media (max-width: 1024px) {
     .container {
         max-width: 952px;

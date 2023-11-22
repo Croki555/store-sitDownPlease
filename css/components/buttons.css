@@ -1,5 +1,6 @@
 /* Primary button*/
 .primary-btn {
+    display: inline-block;
     cursor: pointer;
     border-radius: 10px;
     border: 2px solid transparent;
@@ -30,6 +31,7 @@
 
 /* Secondary button*/
 .secondary-btn {
+    display: inline-block;
     cursor: pointer;
     border: 2px solid var(--primary, #A65CF0);
     border-radius: 10px;

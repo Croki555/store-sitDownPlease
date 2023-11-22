@@ -1,0 +1,135 @@
+@media (max-width: 1024px) {
+    .card:nth-child(4) {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .card:nth-child(3) {
+        display: none;
+    }
+
+    .product__img {
+        max-height: 245px;
+        min-height: 100%;
+    }
+
+    .product__top {
+        display: flex;
+        flex-direction: column;
+        align-items: self-start;
+        row-gap: 82px;
+    }
+
+    .product .wrapper {
+        row-gap: 82px;
+    }
+
+    .product__bottom {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .product__bottom-left {
+        max-width: 515px;
+    }
+
+    .product__bottom-img {
+        width: 240px;
+    }
+}
+
+@media (max-width: 320px) {
+    .card-list {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 16px;
+    }
+
+    .card {
+        padding: 16px;
+        height: 278px;
+    }
+
+    .card__title {
+        font-size: 16px;
+    }
+
+    .card__bottom {
+        padding-top: 5px;
+        gap: 16px;
+    }
+
+    .secondary-btn {
+        padding: 10px 15px;
+        width: 100%;
+    }
+
+    .product__img {
+        height: 116px;
+    }
+
+    .breadcrumb {
+        display: none;
+    }
+
+    .header {
+        padding-bottom: 0;
+    }
+
+    .product__top {
+        row-gap: 16px;
+    }
+
+    .product__title {
+        font-size: 16px;
+    }
+
+    .product__description {
+        margin-bottom: 16px;
+    }
+
+    .product__price {
+        margin-bottom: 16px;
+    }
+
+    .primary-btn {
+        text-align: center;
+        width: 100%;
+    }
+
+    .product__add-basket {
+        text-align: center;
+    }
+    .product .wrapper {
+        row-gap: 32px;
+    }
+
+    .product__bottom-img {
+        width: 140px;
+        height: 64px;
+    }
+
+    .product__bottom-img:first-child {
+        margin-right: 5px;
+    }
+
+    .characteristic {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .characteristic__item {
+        display: flex;
+        flex-direction: column;
+        line-height: unset;
+    }
+
+    .characteristic__dots {
+        display: none;
+    }
+
+    .characteristic__title {
+        font-size: 10px;
+    }
+}

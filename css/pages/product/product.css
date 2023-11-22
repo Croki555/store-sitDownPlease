@@ -1,0 +1,157 @@
+.breadcrumb {
+    padding-top: 24px;
+}
+
+.product {
+    padding-top: 32px;
+}
+
+.product .wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 110px;
+}
+
+.product__top {
+    display: inline-grid;
+    grid-template-columns: repeat(auto-fit, minmax(301px, auto));
+    grid-template-rows: auto;
+    align-items: center;
+    gap: 32px;
+}
+
+.product__img {
+    height: 202px;
+}
+
+.rating {
+    margin-bottom: 5px;
+}
+
+.product__title {
+    margin: 0 0 5px;
+}
+
+.product__description {
+    margin-bottom: 21px;
+    color: var(--grey, #999);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.product__price {
+    margin-bottom: 21px;
+    display: block;
+    color: var(--black, #333);
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.primary-btn {
+    padding: 16px 30px;
+    margin-bottom: 12px;
+}
+
+.secondary-btn {
+    align-self: self-start;
+}
+
+.product__add-basket {
+    cursor: pointer;
+    display: block;
+    color: var(--primary, #A65CF0);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.product__add-basket:hover {
+    color: var(--primary_shade);
+}
+
+.product__bottom {
+    display: grid;
+    grid-template-columns: minmax(auto, 624px) 1fr;
+    gap: 32px;
+}
+
+.product__bottom-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 30px;
+}
+
+.product__bottom-title {
+    margin-bottom: 8px;
+    color: var(--black, #333);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.product__bottom-description {
+    color: var(--black, #333);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.product__bottom-description span {
+    height: 17px;
+}
+
+.product__bottom-img {
+    display: inline-block;
+    width: 247px;
+    height: 113px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.product__bottom-img:first-child {
+    margin-right: 24px;
+    background-image: url("../../../img/other/1920/structure-1.png");
+}
+
+.product__bottom-img:last-child {
+    background-image: url("../../../img/other/1920/structure-2.png");
+}
+
+.characteristic__item {
+    display: inline-grid;
+    grid-template-columns: minmax(auto, 324px) auto;
+    justify-content: space-between;
+    align-items: baseline;
+    line-height: 25px;
+    white-space: nowrap;
+}
+.characteristic__dots {
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px dotted var(--grey, #999);
+}
+
+.characteristic__title {
+    display: inline-flex;
+    align-items: baseline;
+    color: var(--grey, #999);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+}
+.characteristic__description {
+    color: var(--black, #333);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.similar-products {
+    padding-top: 70px;
+}
+
+.similar-products__title {
+    margin-bottom: 24px;
+}
+
