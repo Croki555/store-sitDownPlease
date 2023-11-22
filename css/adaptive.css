@@ -110,7 +110,7 @@
         flex-shrink: 0;
         width: 187px;
         height: 444px;
-        background-image: url("/img/other/768/curves.png");
+        background-image: url("/img/other/curves-768.png");
     }
 
     .footer .container {
@@ -239,10 +239,6 @@
 
     .category-list:first-child {
         gap: 10px;
-    }
-
-    .top-category__item-top {
-        padding: 20px 20px 13px 20px!important;
     }
 
     .top-category__item-center {

@@ -1,0 +1,129 @@
+.breadcrumb {
+    padding-top: 23px;
+}
+
+.cooperation__info,
+.receiving,
+.advantages,
+.advantages__list,
+.guarantees__list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.cooperation__description,
+.receiving__description,
+.advantages__description,
+.guarantees__description {
+    color: var(--grey_shade, #666);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 29px;
+}
+
+/* Cooperation */
+.cooperation {
+    padding-top: 32px;
+}
+
+.cooperation .container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.cooperation__description {
+    max-width: 842px;
+}
+
+/* Receiving */
+.receiving__list {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.receiving__item {
+    display: flex;
+    gap: 12px;
+}
+
+.receiving__icon {
+    display: inline-block;
+}
+
+.receiving__description {
+    max-width: 587px;
+    line-height: 24px;
+}
+
+/* Advantages */
+.advantages__item {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.advantages__item-title {
+    color: var(--secondary, #FF862F);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.advantages__description {
+    max-width: 843px;
+}
+
+/* Quarantees */
+.guarantees__list {
+    margin-bottom: 32px;
+}
+
+.guarantees__title {
+    margin-bottom: 12px;
+}
+
+.guarantees__item {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 12px;
+}
+
+.guarantees__item-number {
+    display: inline-block;
+    color: var(--secondary, #FF862F);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.guarantees__description {
+    display: inline-block;
+    max-width: 826px;
+}
+
+.guarantees__time {
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 32px;
+}
+
+.guarantees__time-icon {
+    display: inline-block;
+    width: 77px;
+    height: 116px;
+    background-image: url("../../../img/other/pencil.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.guarantees__time-description {
+    max-width: 515px;
+    color: var(--black, #333);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+}

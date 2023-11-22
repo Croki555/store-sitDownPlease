@@ -29,6 +29,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -68,6 +69,7 @@ input, button {
 button[type="submit"] {
     cursor: pointer;
 }
+
 
 ::-webkit-scrollbar {
      width: 0;

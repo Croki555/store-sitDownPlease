@@ -87,7 +87,7 @@
         flex-shrink: 0;
         width: 187px;
         height: 444px;
-        background-image: url("../../../img/other/768/curves.png");
+        background-image: url("../../../img/other/curves-768.png");
     }
 }
 
@@ -176,14 +176,15 @@
 
     .category-list {
         gap: 5px;
+        margin-bottom: 4px;
     }
 
-    .category-list:first-child {
+    .top-category__item:first-child .category-list {
         gap: 10px;
     }
 
-    .top-category__item-top {
-        padding: 20px 20px 13px 20px!important;
+    .top-category__item:nth-child(3) .top-category__item-top {
+        padding: 16px 16px;
     }
 
     .top-category__item-center {
@@ -205,5 +206,28 @@
 
     .force__checkbox-label {
         font-size: 12px;
+    }
+    /* .High Rating */
+
+    .high-rating .card-list {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 16px;
+    }
+
+    .high-rating .card {
+        padding: 16px;
+        height: 278px;
+    }
+
+    .high-rating .card__title {
+        font-size: 16px;
+    }
+
+    .high-rating .card__bottom {
+        gap: 16px;
+    }
+
+    .high-rating .secondary-btn {
+        padding: 10px 22px;
     }
 }

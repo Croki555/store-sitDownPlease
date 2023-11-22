@@ -110,11 +110,11 @@
 
 .product__bottom-img:first-child {
     margin-right: 24px;
-    background-image: url("../../../img/other/1920/structure-1.png");
+    background-image: url("../../../img/sofa/structure-1.png");
 }
 
 .product__bottom-img:last-child {
-    background-image: url("../../../img/other/1920/structure-2.png");
+    background-image: url("../../../img/sofa/structure-2.png");
 }
 
 .characteristic__item {

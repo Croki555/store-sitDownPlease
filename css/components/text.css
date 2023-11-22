@@ -90,14 +90,17 @@
     color: var(--secondary_shade, #BB370E);
 }
 
-.title-1 {
+.title-1,
+.title-2 {
+    margin: 0;
     color: var(--black, #333);
-    font-size: 32px;
     font-weight: 400;
 }
 
+.title-1 {
+    font-size: 32px;
+}
+
 .title-2 {
-    color: var(--black, #333);
     font-size: 24px;
-    font-weight: 400;
 }
